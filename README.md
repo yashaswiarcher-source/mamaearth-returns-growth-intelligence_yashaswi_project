@@ -93,4 +93,3 @@ When no key is configured, generate_scr_narrative() calls the deterministic gene
 The script prints a pass/fail line for each required numeric figure and an overall result. narrator/sample_output.txt contains a saved keyless sample with all checks passing, so grading does not depend on a live API call.
 Reproducibility and safety
 Run the SQL database rebuild before the SQL reports whenever starting from a fresh checkout. Run the Python analysis before the narrator so that findings.json is regenerated from the raw CSVs. Do not edit the CSVs, findings.json, or chart outputs manually to change values. Do not commit .env files or API keys.
-
