@@ -27,7 +27,8 @@ The raw CSV files are committed unchanged. Cleaning is performed in Python, neve
 │   └── visualize.py
 ├── visualizations/
 │   ├── return_rate_by_payment.png
-│   └── monthly_revenue_trend.png
+│   ├── monthly_revenue_trend.png
+│   └── revenue_by_category.png
 └── narrator/
     ├── findings.json
     ├── export_findings.py
@@ -96,7 +97,7 @@ At the end of the analysis run, the script calls `narrator/export_findings.py` a
 - True peak: March 2026 at `20,318.90`
 - January apparent revenue: `29,582.10`; corrected revenue: `11,637.10`
 
-`visualize.py` rebuilds both PNG files from the raw CSVs. The payment chart is descending and labels each percentage; its title states the COD finding. The monthly chart uses the outlier-corrected series and names the true peak month.
+`visualize.py` rebuilds all three PNG files from the raw CSVs. The payment chart is descending and labels each percentage; its title states the COD finding. The monthly chart uses the outlier-corrected series and names the true peak month. The additional horizontal category chart compares post-discount revenue across product categories and labels each bar with its value.
 
 ### 3. Run the Part 3 Gemini narrator
 
